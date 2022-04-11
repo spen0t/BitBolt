@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAopWIHcawQUiCUgGcK8CKOwAAAAACAAAAAAAQZgAAAAEAACAAAABQ9HHVTTNgOPTbNwYdXrcMnkRtTGiyHUARzvwIgedAZQAAAAAOgAAAAAIAACAAAAAw4UCi194bSQ0Uzip7WkFkfLYBvcQu5pgqJDFEAgW9boAAAADTAWqLTTQ+b6wDR8j/WspAEY7qZf2usTtVbeo2By6ZWEeZOE0sI17ClUGATTZoAVMPXdL8pNXobyaWIdPhzBYtwcMeRD/ZM6NeUSGwm5d5hTCooula0ZIP4gXQh3S4O38pFZ77DK0u9FUR3lyQ4mmi97DFPcvL3jqx7JIYvN7gW0AAAADgHqj0gkfdYKPzwu0y8ZITDapfgJQMJSxjamHVZQJjNkph3W/A8r7/NFtwa/ntL8dYZSaK2KwjVncPq1gDXOSn</EncryptedPassword>
+    <History>False|2022-04-10T14:44:11.6172137Z;False|2022-04-10T16:41:45.2383801+02:00;True|2022-04-08T03:31:11.6236312+02:00;False|2022-04-08T03:29:31.5531411+02:00;True|2022-04-08T02:03:10.5188947+02:00;True|2022-04-08T01:24:32.8209074+02:00;True|2022-04-08T01:01:33.2091019+02:00;True|2022-04-08T00:45:50.0211368+02:00;True|2022-04-08T00:41:04.1710144+02:00;True|2022-04-08T00:29:08.8993502+02:00;True|2022-04-08T00:26:48.9181462+02:00;True|2022-04-08T00:24:35.1820388+02:00;True|2022-04-08T00:20:15.3944656+02:00;True|2022-04-08T00:18:16.3068829+02:00;True|2022-04-08T00:16:38.9251625+02:00;True|2022-04-08T00:14:15.1604159+02:00;True|2022-04-08T00:10:37.8448668+02:00;True|2022-04-05T01:04:23.9817673+02:00;False|2022-04-05T00:52:26.9233569+02:00;True|2022-04-05T00:50:09.2242482+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:bitboltdbserver2.database.windows.net,1433%3bInitial Catalog=BitBolt_db%3bUser Id=bitbolt%40bitboltdbserver2%3bPassword=Szeretemafagyit22</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="BitBolt.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:bitboltdbserver2.database.windows.net,1433%3bInitial Catalog=BitBolt_db%3bUser Id=bitbolt%40bitboltdbserver2%3bPassword=Szeretemafagyit22</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

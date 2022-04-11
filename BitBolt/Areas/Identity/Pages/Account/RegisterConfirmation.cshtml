@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Erősítsd meg a regisztrációt";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+<p>
+    <a id="confirm-link" href="@Model.EmailConfirmationUrl">Ide kattintva</a>
+</p>
+    }
+    else
+    {
+<p>
+        Ha lenne emailes megerősítes ey jelenne meg
+</p>
+    }
+}
+

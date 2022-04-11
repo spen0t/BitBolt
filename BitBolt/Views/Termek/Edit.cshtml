@@ -1,0 +1,53 @@
+﻿@model BitBolt.Models.Termekek
+
+@{
+    ViewData["Title"] = "Szerkesztés";
+}
+
+<h1>Szerkesztést</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="mt-2"/>
+            <div class="form-group">
+                <label asp-for="Megnevezés" class="control-label">Megnevezés:</label>
+                <input asp-for="Megnevezés" class="form-control" />
+                <span asp-validation-for="Megnevezés" class="text-danger"></span>
+            </div>
+            <div class="mt-2"/>
+            <div class="form-group">
+                <label asp-for="Gyáró" class="control-label">Gyártó:</label>
+                <input asp-for="Gyáró" class="form-control" />
+                <span asp-validation-for="Gyáró" class="text-danger"></span>
+            </div>
+            <div class="mt-2"/>
+            <div class="form-group">
+                <label asp-for="Típus" class="control-label">Típus:</label>
+                <input asp-for="Típus" class="form-control" />
+                <span asp-validation-for="Típus" class="text-danger"></span>
+            </div>
+            <div class="mt-2"/>
+            <div class="form-group">
+                <label asp-for="BeszerzésiÁr" class="control-label">Beszerzési ár:</label>
+                <input asp-for="BeszerzésiÁr" class="form-control" />
+                <span asp-validation-for="BeszerzésiÁr" class="text-danger"></span>
+            </div>
+            <div class="mt-2"/>
+            <div class="form-group">
+                <input type="submit" value="Mentés" class="btn btn-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+<div class="mt-2"/>
+<div>
+    <a class="link-dark" asp-action="Index">Vissza</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
